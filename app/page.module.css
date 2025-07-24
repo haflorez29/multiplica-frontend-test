@@ -1,17 +1,13 @@
 .container {
-  min-height: 100vh;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-image: url('/images/stars.png');
+  background-size: cover;
+  background-position: center;
 }
 
-.main {
-  text-align: center;
-  color: white;
-  max-width: 800px;
+.logo {
+ display: flex;
+ justify-content: flex-end;
+ margin: 2rem 4rem 2rem 0;
 }
 
 .title {
