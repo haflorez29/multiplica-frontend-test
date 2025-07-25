@@ -1,4 +1,4 @@
-import styles from "./Characters.module.css";
+import styles from "./CharacterSelected.module.css";
 import Image from "next/image";
 import { useCharacterStore } from "./store/character-store";
 
@@ -25,7 +25,7 @@ export function CharacterSelected() {
                   : styles.deadDot
               }
             />{" "}
-            {selectedCharacter.status}
+            {selectedCharacter.status == "Alive" ? "VIVO" : "MUERTO"}
           </div>
 
           <div className={styles.detailOverlay}>
