@@ -1,11 +1,12 @@
 .container {
-  background-image: url("/images/stars.png");
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  padding: 2rem;
+  background-image: url("/images/stars.png"), url("/images/starsalone.png");
+  background-position: bottom left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .logo {

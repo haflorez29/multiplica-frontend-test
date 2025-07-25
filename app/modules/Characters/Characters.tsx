@@ -35,6 +35,7 @@ export function CharacterPage({
         <CharacterSelected />
         <CharacterList />
       </div>
+      <div className={styles.footer}></div>
     </div>
   );
 }
