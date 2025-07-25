@@ -1,6 +1,6 @@
 import { getCharacters } from "rickmortyapi";
 import { Character } from "./lib/types";
-import { CharacterPage } from "./components/Characters";
+import { CharacterPage } from "./modules/Characters/Characters";
 
 export default async function Page() {
   let characters: Character[] = [];

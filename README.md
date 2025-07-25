@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### 📘 README
 
-## Getting Started
+#### 🚀 Cómo levantar el proyecto y correr pruebas unitarias
 
-First, run the development server:
+1. **Clona el repositorio**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```bash
+   git clone https://github.com/haflorez29/multiplica-frontend-test.git
+   cd multiplica-frontend-test
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Instala las dependencias**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Levanta el entorno de desarrollo**
 
-## Learn More
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. **Corre las pruebas unitarias**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm run test
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   * Para ver resultados en tiempo real:
 
-## Deploy on Vercel
+     ```bash
+     npm run test:watch
+     ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### 💡 ¿Qué es lo que más te gustó de tu desarrollo?
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Disfruté mucho trabajar con Next y React server components y Zustand. Me gustó que lógre modularizar los componentes y agregar los test
+
+#### ⏳ Si hubieras tenido más tiempo, ¿qué hubieras mejorado o qué más hubieras hecho?
+
+* Agregaría paginación de personajes desde la API.
+* Revisaria temas de accesibilidad.
+
+#### 🐞 Pain point o bug que encontraste y cómo lo solucionaste
+
+Tuve algunos inconvenientes al momento de instalar las dependencias necesarias para ejecutar los tests. Sin embargo, revisando la documentación oficial, logré identificar y solucionar lo que me hacía falta.
+También encontré un problema al implementar la lógica de favoritos: al intentar seleccionar uno, se estaban enviando todos los personajes en lugar de uno solo, lo que impedía que se mostrara correctamente el personaje deseado. Después de depurar el flujo y revisar la función de selección, ajusté el llamado para asegurarme de enviar únicamente el personaje seleccionado.
